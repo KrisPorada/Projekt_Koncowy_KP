@@ -3,6 +3,7 @@ package pl.example.projekt.dto;
 import lombok.Data;
 import javax.validation.constraints.Pattern;
 
+
 @Data
 public class DepartmentDto {
     private Long id;

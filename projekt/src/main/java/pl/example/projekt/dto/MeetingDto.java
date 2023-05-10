@@ -21,6 +21,7 @@ public class MeetingDto {
     @FutureOrPresent(message = "Start time must be in the future or present")
     private LocalDateTime startTime;
 
+
     @Column(nullable = false)
     @NotNull(message = "End time must not be null")
     @FutureOrPresent(message = "End time must be in the future or present")

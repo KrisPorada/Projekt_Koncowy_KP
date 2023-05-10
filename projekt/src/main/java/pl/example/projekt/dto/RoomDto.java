@@ -13,6 +13,8 @@ public class RoomDto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+
+
     @Column(nullable = false, unique = true)
     @NotNull(message = "Room name cannot be null")  //walidacja czy nie pusta  nazwa
     @Pattern(regexp = "[a-zA-Z0-9 ]{3,}",
