@@ -11,7 +11,8 @@ class EmployeeTest {
     }
 
     @Test
-    void getLastName() {
+    void getLastName() throws Exception {
+//        Employee employee=new Employee(lastNa)
     }
 
     @Test

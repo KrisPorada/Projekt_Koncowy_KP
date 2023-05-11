@@ -8,8 +8,12 @@ import java.util.List;
 
 @Service
 public class MeetingService {
-    @Autowired
-    private MeetingRepository meetingRepository;
+
+    private final MeetingRepository meetingRepository;
+
+    public MeetingService(MeetingRepository meetingRepository) {
+        this.meetingRepository = meetingRepository;
+    }
 
     public List<Meeting> findAll() {
         return meetingRepository.findAll();
